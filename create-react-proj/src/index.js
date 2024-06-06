@@ -2,9 +2,10 @@ import React from "react"
 import ReactDOM from "react-dom"
 import App from "./Components/App.js"
 import './Components/styles/global.css'
+import { createRoot } from "react-dom/client"
 
 
-//getting the div whose id is root
-const reactContentRoot = document.getElementById("root")
+const rootElement = document.getElementById("root")
+const root = createRoot(rootElement)
 
-ReactDOM.render(<App/>,reactContentRoot)
+root.render(<App />)

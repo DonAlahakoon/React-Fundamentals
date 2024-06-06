@@ -1,16 +1,30 @@
 import React from "react"
 import CountButton from "./CountButton/CountButton"
+import SearchBar from "./SearchBar/SearchBar"
+
+const products = [
+  "toothpaste",
+  "toothbrush",
+  "mouthfloss",
+  "mouthwash",
+  "dental pick",
+] 
+
+const products2 = [
+  "carrots",
+  "apples",
+  "bananas",
+  "grapes",
+  "oranges",
+]
 
 const App = () => {
-    const myItem = "mike"
   
-    return (
-      <div>
-         <CountButton incrementBy={1} buttonColor={"Blue"}>This is a standalone component</CountButton>
-         <CountButton incrementBy={50} buttonColor={"green"}/>
-         <CountButton incrementBy={500} buttonColor={"pink"}/>
-      </div>
-    )
+    return <div>
+      <SearchBar products={products}/>
+      <SearchBar products={products2}/>
+      <CountButton incrementBy={5}  buttonColor="lightblue"/>
+    </div>
   }
 
   export default App

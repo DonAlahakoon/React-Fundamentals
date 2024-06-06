@@ -20,7 +20,7 @@ const CountButton = (props) => {
      */
 
     return <div>
-        <button style={buttonStyle} onClick={()=> {handleClick()}}>{props.incrementBy}</button>
+        <button style={buttonStyle} onClick={()=> {handleClick()}}>{"Increment by  " + props.incrementBy}</button>
         <div className="count-display">{currentCount}</div>
     </div>
 }
