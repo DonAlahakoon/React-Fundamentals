@@ -1,0 +1,6 @@
+#installing create react app
+
+npm i -g create-react-app
+
+#creating a new create react app project in create-react-app folder
+create-react-app create-react
